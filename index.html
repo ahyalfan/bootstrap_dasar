@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Travel World</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top py-2">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top py-3">
         <div class="container">
           <a class="navbar-brand" href="#">Travel World</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,19 +21,19 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Services</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#" aria-disabled="false">Contact</a>
+              <a class="nav-link" href="#service">Services</a>
+              <a class="nav-link" href="#promo">Promo</a>
+              <a class="nav-link" href="#contact" aria-disabled="false">Contact</a>
             </div>
           </div>
         </div>
       </nav>
 
       <!-- header -->
-      <section class="header bg-light text-dark">
+      <section id="header" class="header bg-light text-dark py-4">
         <div class="container text-center text-sm-start">
           <div class="row align-items-center">
-            <div class="col-sm-5">
+            <div class="col-sm-5 px-5 px-sm-3">
               <h1><span class="text-primary">Travel</span> Mudah dan Cepat.</h1>
               <p class="lead">Layanan Travel paling nyaman, mudah, dan cepat. Hanya ada di Travel World</p>
               <button
@@ -48,10 +51,10 @@
       </section>
 
       <!-- service -->
-      <section id="service" class="pt-5 bg-light text-dark">
+      <section id="service" class="pt-2 pt-sm-4 bg-light text-dark">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-            <div class="col">
+            <div class="col mb-4 mb-sm-5">
               <div class="card h-100">
                 <img src="img/best_place.svg" class="p-3 card-img-top" alt="wisata">
                 <div class="card-body">
@@ -61,7 +64,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col mb-4 mb-sm-5">
               <div class="card h-100 bg-info-subtle">
                 <img src="img/aircraft.svg" class="p-3 card-img-top" alt="tiket">
                 <div class="card-body">
@@ -71,7 +74,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col mb-4 mb-sm-5">
               <div class="card h-100">
                 <img src="img/hotel.svg" class="p-3 card-img-top" alt="hotel">
                 <div class="card-body">
@@ -85,6 +88,72 @@
         </div>
       </section>
 
+      <!-- promo -->
+      <section class="bg-primary text-light p-5" id="promo">
+        <div class="container">
+          <div class="d-md-flex justify-content-between align-content-center">
+            <h3>Dapatkan promo menarik</h3>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Masukan Email Anda">
+              <button class="btn-dark btn btn-lg" type="button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="p-5" id="contact">
+        <div class="container">
+          <div class="row g-3 align-content-center">
+            <div class="col-sm">
+              <h2 class="text-center mb-2">Contact us</h2>
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span class="fw-bold">Location : </span>
+                  Growok
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-phone"></i>
+                  <span class="fw-bold">Mobile Phone : </span>
+                  (+62) 822-9802-8290
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-envelope"></i>
+                  <span class="fw-bold">Email : </span>
+                  service@trvelworld.com
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-instagram"></i>
+                  <span class="fw-bold">Instagram : </span>
+                  @TravelWorld
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-github"></i>
+                  <span class="fw-bold">Github : </span>
+                  <a href="github.com/Ahyalfan">Ahyalfan</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm ps-5">
+              <img class="img-fluid d-none d-sm-inline-block h-75"
+              src="img/contact.svg" 
+              alt="Adventure">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="p-3 bg-dark text-light text-center">
+        <div class="container">
+          <p class="lead">Copyright &copy; 2023 TravelWorld.com</p>
+          
+          <a href="#" class="position-absolute bottom end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+        </div>
+      </footer>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
